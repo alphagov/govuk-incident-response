@@ -6,3 +6,6 @@ applications:
       - python_buildpack
     services:
       - govuk-incident-response-database
+    env:
+      PIP_NO_CACHE_DIR: off
+      DJANGO_SETTINGS_MODULE: govukincidentresponse.settings.production
