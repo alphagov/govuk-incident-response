@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'after_response',
+    'rest_framework',
+    'bootstrap4',
+    'response.apps.ResponseConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -103,18 +108,44 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
+LANGUAGE_CODE = 'en-gb'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
 USE_L10N = True
-
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+
+
+# Django REST Framework
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 100,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
+
+
+# Markdown filter
+MARKDOWN_FILTER_WHITELIST_TAGS = [
+    "a", "p", "code", "h1", "h2", "ul", "li", "strong", "em", "img",
+]
+
+MARKDOWN_FILTER_WHITELIST_ATTRIBUTES = ["src", "style"]
+
+MARKDOWN_FILTER_WHITELIST_STYLES = [
+    "width", "height", "border-color", "background-color", "white-space",
+    "vertical-align", "text-align", "border-style", "border-width", "float",
+    "margin", "margin-bottom", "margin-left", "margin-right", "margin-top",
+]
+
+
+# Monzo Response
+RESPONSE_LOGIN_REQUIRED = True
