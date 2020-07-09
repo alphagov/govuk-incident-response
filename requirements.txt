@@ -1,0 +1,35 @@
+-i https://pypi.org/simple
+beautifulsoup4==4.9.1
+bleach-whitelist==0.0.10
+bleach==3.1.4; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+certifi==2020.6.20
+cffi==1.14.0
+chardet==3.0.4
+cryptography==2.9.2; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+dj-database-url==0.5.0
+django-after-response==0.2.2
+django-bootstrap4==2.2.0; python_version >= '3.6' and python_version < '4.0'
+django==2.2.14
+djangorestframework==3.11.0; python_version >= '3.5'
+emoji-data-python==1.1.0
+git+https://github.com/sjdweb/response.git@3b0d086784c87865325fe182524c9c844fd6164c#egg=django-incident-response
+gunicorn==20.0.4
+idna==2.10; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+jsonfield==3.1.0; python_version >= '3.6'
+markdown2==2.3.9
+munch==2.5.0
+psycopg2-binary==2.8.5
+pycparser==2.20; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+python-slugify==4.0.1
+pytz==2020.1
+requests==2.24.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
+six==1.15.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+slackclient==1.3.2
+soupsieve==2.0.1; python_version >= '3.5'
+sqlparse==0.3.1; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+statuspageio==0.0.1
+text-unidecode==1.3
+urllib3==1.25.9; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'
+webencodings==0.5.1
+websocket-client==0.54.0
+whitenoise==5.1.0

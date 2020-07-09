@@ -18,5 +18,6 @@ $ pipenv run python manage.py runserver
 ## Deploying
 
 ```sh
+$ pipenv lock -r > requirements.txt
 $ cf push govuk-incident-response
 ```
