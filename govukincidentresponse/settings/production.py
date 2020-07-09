@@ -7,6 +7,8 @@ from .common import *
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
+ALLOWED_HOSTS = ['govuk-incident-response.cloudapps.digital']
+
 DATABASES = {'default': dj_database_url.config()}
 
 MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
