@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2a840d38c79ea8cf3c0e4d2a39febaae81658a3c6d861ab3f93bd43f61debf71"
+            "sha256": "fe8cb5d060842297ffd0202f9c69decb32eab7a2f77143d613346dc72daf5351"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -141,11 +141,11 @@
             "version": "==2.2.0"
         },
         "django-incident-response": {
+            "git": "https://github.com/sjdweb/response.git",
             "hashes": [
                 "sha256:ae9860d5f6a3c1824b3537d4de4a8275fcbe00b849f90a50bd1f177c9c3b7296"
             ],
-            "index": "pypi",
-            "version": "==0.4.0"
+            "ref": "3b0d086784c87865325fe182524c9c844fd6164c"
         },
         "djangorestframework": {
             "hashes": [
