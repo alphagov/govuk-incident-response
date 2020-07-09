@@ -1,5 +1,7 @@
 import os
 
+from response.slack.client import SlackClient
+
 from .common import *
 
 
@@ -20,6 +22,7 @@ SITE_URL = os.environ.get('SITE_URL', 'http://localhost:8000')
 
 SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
 SLACK_SIGNING_SECRET = os.environ.get('SLACK_SIGNING_SECRET')
+SLACK_CLIENT = SlackClient(SLACK_TOKEN)
 
 INCIDENT_CHANNEL_ID = os.environ.get('INCIDENT_CHANNEL_ID')
 INCIDENT_BOT_ID = os.environ.get('INCIDENT_BOT_ID')

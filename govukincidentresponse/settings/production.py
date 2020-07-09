@@ -1,6 +1,7 @@
 import os
 
 import dj_database_url
+from response.slack.client import SlackClient
 
 from .common import *
 
@@ -18,6 +19,7 @@ SITE_URL = f'https://{ALLOWED_HOSTS[0]}'
 
 SLACK_TOKEN = os.environ['SLACK_TOKEN']
 SLACK_SIGNING_SECRET = os.environ['SLACK_SIGNING_SECRET']
+SLACK_CLIENT = SlackClient(SLACK_TOKEN)
 
 INCIDENT_CHANNEL_ID = os.environ['INCIDENT_CHANNEL_ID']
 INCIDENT_BOT_ID = os.environ['INCIDENT_BOT_ID']
