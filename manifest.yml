@@ -1,0 +1,8 @@
+applications:
+
+  - name: govuk-incident-response
+    memory: 512M
+    buildpacks:
+      - python_buildpack
+    services:
+      - govuk-incident-response-database
