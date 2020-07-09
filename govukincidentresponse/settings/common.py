@@ -92,4 +92,4 @@ MARKDOWN_FILTER_WHITELIST_STYLES = [
     "margin", "margin-bottom", "margin-left", "margin-right", "margin-top",
 ]
 
-RESPONSE_LOGIN_REQUIRED = True
+RESPONSE_LOGIN_REQUIRED = False
