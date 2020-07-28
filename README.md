@@ -26,6 +26,8 @@ $ pipenv lock -r > requirements.txt
 $ cf push govuk-incident-response
 ```
 
+Follow [the instructions](https://github.com/monzo/response#completing-the-setup-and-config-with-slack) from Monzo to set up the application in Slack. This only needs to be done once.
+
 ## Findings
 
 I've tried to order the findings by how positive/negative it is in relation to using the tool for GOV.UK.
